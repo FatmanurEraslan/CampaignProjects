@@ -8,8 +8,8 @@ import { Router } from '@angular/router';
 export class AuthService {
   private readonly isAuthenticatedKey = 'isAuthenticated';
   private readonly loginTimeKey = 'loginTime';
-  private readonly validUsername = 'fatma'; // Username is defined here
-  private readonly validPassword = '122683Fatma'; // Password is defined here
+  private readonly validUsername = 'test'; // Username is defined here
+  private readonly validPassword = 'deneme1234'; // Password is defined here
   private readonly sessionDuration = 60 * 60 * 1000; // 1 hour in milliseconds
 
   private isAuthenticated = false;
