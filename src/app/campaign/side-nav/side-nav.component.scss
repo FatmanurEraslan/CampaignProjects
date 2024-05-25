@@ -1,0 +1,30 @@
+
+:host ::ng-deep .p-menu {
+    width: 100%; /* This sets a fixed width */
+    max-width: 100%; /* Ensures it doesn't exceed the container width */
+    border:0;
+}
+
+:host ::ng-deep .p-sidebar .p-sidebar-content {
+    padding: 0rem; 
+}
+.sidebar-button{
+    margin:20px;
+}
+
+/* Style for the image */
+.custom-image {
+    height: 50px; /* Adjust the height as needed */
+}
+
+/* Style for the button */
+.sidebar-button {
+    margin-left: auto; /* Pushes the button to the far right */
+    height: 50px; /* Match the height with the image for alignment */
+}
+:host ::ng-deep .p-button:focus{
+
+    outline: none!important;
+  
+    
+  }

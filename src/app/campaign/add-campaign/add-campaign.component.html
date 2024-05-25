@@ -1,0 +1,48 @@
+<app-side-nav></app-side-nav>
+<div class="form-container" >
+  <form [formGroup]="campaignForm">
+    <div class="form-group">
+      <label for="title">Kampanya Başlığı</label>
+      <input
+        pInputText
+        type="text"
+        id="title"
+        formControlName="title"
+        class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="description">Kampanya Açıklaması:</label>
+      <textarea
+        rows="5"
+        cols="30"
+        pInputTextarea
+        formControlName="explanation"
+        class="form-control">
+      </textarea>
+    </div>
+    <div class="form-group ">
+      <label for="point">Kampanya Puanı:</label>
+      <p-inputNumber 
+        formControlName="point"
+        mode="decimal" 
+        [showButtons]="true" 
+        inputId="minmax-buttons" 
+        [min]="0"    [style]="{ width: '50%' }"
+
+     />        
+     <br>
+      <label class="pt-3" for="point">Kampanya Tarihi:</label> <p-calendar class="calender-button"
+      formControlName="date"
+      [showIcon]="true" 
+      [iconDisplay]="'input'" 
+      [showOnFocus]="false" 
+      inputId="icondisplay" />
+    </div>
+
+    <button type="submit" [disabled]="campaignForm.invalid" 
+    [style.background-color]="campaignForm.valid ? '#f87315' : '#ccc'"
+    (click)="onSubmit()"
+    class="submit-button">Kaydet</button>
+  </form>
+</div>
+<p-toast />

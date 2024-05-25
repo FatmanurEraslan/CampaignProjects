@@ -1,0 +1,77 @@
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+  .login-container h2 {
+    margin: 0 0 3px;
+    padding: 0;
+    color: black;
+    text-align: center;
+  }
+
+  .login-container p {
+    margin: 0 0 30px;
+    padding: 0;
+    color: gray;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  :host ::ng-deep .p-inputtext {
+    width: 100%; /* This makes the input field take the full width of its container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Alternatively, you can set a specific width */
+
+:host ::ng-deep .p-inputtext {
+    width: 300px; /* This sets a fixed width */
+    max-width: 100%; /* Ensures it doesn't exceed the container width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+label{
+    color:gray
+}
+
+:host ::ng-deep .p-button {
+    width: 300px; /* This sets a fixed width */
+    max-width: 100%; /* Ensures it doesn't exceed the container width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+
+:host ::ng-deep .p-button {
+  width: 300px; /* This sets a fixed width */
+  max-width: 100%; /* Ensures it doesn't exceed the container width */
+  padding: 10px;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+:host ::ng-deep .p-button:focus{
+
+  border: 0px solid #ccc;
+  
+}
+:host ::ng-deep .p-button:focus{
+
+  outline: none!important;
+
+  
+}

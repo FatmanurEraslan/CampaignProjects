@@ -1,0 +1,14 @@
+<div class="card flex flex-wrap justify-content-center gap-2">
+    <p-sidebar [(visible)]="sidebarVisible" position="right">
+        <p-menu [model]="items" />
+    </p-sidebar>
+</div>
+
+<div class="header-container" style="display: flex; align-items: center; justify-content: space-between;">
+    <a href="/campaigns">
+        <img src="assets/images/logo.png" alt="Your Image" class="custom-image pl-3">
+    </a>
+    <p-button (click)="sidebarVisible = true"
+        icon="pi pi-align-justify" [rounded]="true" severity="warning" [outlined]="true" class="sidebar-button"/>
+
+</div>
